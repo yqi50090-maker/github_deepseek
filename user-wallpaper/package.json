@@ -1,0 +1,21 @@
+{
+  "name": "user-wallpaper",
+  "version": "0.1.0",
+  "description": "把 Wallpaper Engine 壁纸用作 DSH 网页界面背景（夏日蓝莓）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}
