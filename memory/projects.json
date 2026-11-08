@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "updatedAt": "YYYY-MM-DD",
+  "note": "机器可读的活清单。只存指针与元数据，不存任何结论。真源永远是各活的 项目信息.md。",
+  "rules": {
+    "fp": "该活 项目信息.md 的 sha256 前 16 位；文件改动后需重算",
+    "state": "进行中 | 挂起 | 待开工 | 已归档",
+    "fileConflict": "两条记录指向同一个 file ⇒ 必须显式标注 conflict"
+  },
+  "projects": {
+    "example": {
+      "title": "示例项目",
+      "file": "C:/Users/YOU/.dsh/skills/projects_memory/example/项目信息.md",
+      "state": "进行中",
+      "owner": "主会话",
+      "sizeKB": 0.0,
+      "sec0KB": 0.0,
+      "fp": "",
+      "updatedAt": "YYYY-MM-DD"
+    }
+  }
+}

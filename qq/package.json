@@ -1,0 +1,29 @@
+{
+  "name": "@local/qq",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "QQ 通道：私聊消息接入（NapCat 上报 → 唤醒专用会话 → qq-reply 回复）+ 一键接入操作（拉起 NapCat、递登录二维码）",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "qq-reply.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}
